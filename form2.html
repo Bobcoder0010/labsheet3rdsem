@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <style>
+        h3{
+            text-align: center;
+            color: slateblue;
+            text-decoration: underline;
+        }
+        label{
+            margin-right: 30px;
+            color: white;
+        }
+        text{
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: small;
+        }
+        fieldset{
+            background-color: slateblue;
+            margin-left: 200px;
+            margin-right: 200px;
+            border: 1px solid black;
+            font-family: Arial, sans-serif;
+            font-size: small;
+        }
+        th,td{
+            color: white;
+        }
+        table{
+            border-collapse: collapse;
+            display: flex;
+            justify-content: center;
+            margin-top: -15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="backend.php">
+        <h3>STUDENT REGISTRATION FORM</h3>
+        <fieldset>
+            <div>
+                <label>FIRST NAME</label>
+                <input type="text"><text>(max 30 characters a-z and A-Z)</text>
+            </div>
+            <br>
+            <div>
+                <label>LAST NAME</label>
+                <input type="text"><text>(max 30 characters a-z and A-Z)</text>
+            </div>
+            <br>
+            <div>
+                <label>DATE OF BIRTH</label>
+                <select name="nam" id="nam">
+                    <option value="a">Day:</option>
+                    <option value="Monday">Sunday</option>
+                    <option value="Tuesday">Monday</option>
+                    <option value="Wednesday">Tuesday</option>
+                    <option value="Wednesday">Wedday</option>
+                    <option value="Wednesday">Thursday</option>
+                    <option value="Wednesday">Friday</option>
+                    <option value="Wednesday">Saturday</option>
+                </select>
+                <select name="ay" id="ay">
+                    <option value="b">Month:</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <select name="ear" id="ear">
+                    <option value="c">Year:</option>
+                    <option value="">1999</option>
+                    <option value="">2000</option>
+                    <option value="">2001</option>
+                    <option value="">2002</option>
+                    <option value="">2003</option>
+                    <option value="">2004</option>
+                    <option value="">2005</option>
+                    <option value="">2006</option>
+                    <option value="">2007</option>
+                    <option value="">2008</option>
+                    <option value="">2009</option>
+                    <option value="">2010</option>
+                </select>
+            </div>
+            <br>
+            <div>
+            <label>EMAIL ID</label>
+            <input type="email" name="em" id="em">
+            </div>
+            <br>
+            <div>
+                <label>MOBILE NUMBER</label>
+                <input type="number" name="num" id="num"><text>(10 digit number)</text>
+            </div>
+            <br>
+            <div>
+                <label>GENDER</label>
+                <text>Male</text>
+                <input type="radio" name="gen" id="g">
+                <text>Female</text>
+                <input type="radio" name="gen" id="h">
+            </div>
+            <br>
+            <div>
+                <label>ADDRESS</label>
+                <textarea name="ares" id="ares" cols="30" rows="4"></textarea>
+            </div>
+            <br>
+            <div>
+                <label>CITY</label>
+                <input type="text"><text>(max 30 characters a-z and A-Z)</text>
+            </div>
+            <br>
+            <div>
+                <label>PIN CODE</label>
+                <input type="text"><text>(6 digit number)</text>
+            </div>
+            <br>
+            <div>
+                <label>STATE</label>
+                <input type="text"><text>(max 30 characters a-z and A-Z)</text>
+            </div>
+            <br>
+            <div>
+                <label>COUNTRY</label>
+                <input type="text" value="India">
+            </div>
+            <br>
+            <div>
+                <label>HOBBIES</label>
+                <text>Drawing</text>
+                <input type="checkbox">
+                <text>Singing</text>
+                <input type="checkbox">
+                <text>Dancing</text>
+                <input type="checkbox">
+                <text>Sketching</text>
+                <input type="checkbox">
+                <br>
+                <text style="margin-left: 40px;">Others</text>
+                <input type="checkbox">
+                <input type="text">
+            </div>
+            <br>
+            <div>
+                <label>QUALIFICATION</label>
+                <table>
+                        <th>SI.No</th>
+                        <th>Examination</th>
+                        <th>Board</th>
+                        <th>Percentage</th>
+                        <th>Year of Passing</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Class X</td>
+                        <td ><input type="text"></td>
+                        <td ><input type="text"></td>
+                        <td ><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Class XII</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>                   
+                    <tr>
+                        <td>3</td>
+                        <td>Graduation</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>                              
+                    </tr>               
+                    <tr>
+                        <td>4</td>
+                        <td>Masters</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>                 
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">(10 char max)</td>
+                        <td style="text-align: center;">(upto 2 Decimal)</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div>
+                <label>COURSE <br> APPLIED FOR </label>
+                <text>BCA</text>
+                <input type="radio">
+                <text>B.Com</text>
+                <input type="radio">
+                <text>B.Sc</text>
+                <input type="radio">
+                <text>B.A</text>
+                <input type="radio">
+            </div>
+            <br>
+            <div style="display: flex; justify-content: center;">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
